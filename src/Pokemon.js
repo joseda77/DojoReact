@@ -11,8 +11,9 @@ class Pokemon extends Component {
             const response = await fetch(this.props.url)
             const pokemon_attrs = await response.json()
             this.setState({ attributes: pokemon_attrs })
-            requestPokemonAwait()
         }
+
+            requestPokemonAwait()
     }
 
     render() {
